@@ -301,6 +301,20 @@ body {
 .input-field {
   height: 40px;
 }
+.modal-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--main-color);
+}
+/* .modal-label:not(:first child) {
+  margin-top: 10px;
+} */
+/* .form .modal-label + .modal-label {
+  margin-top: 10px;
+} */
 .textarea-note {
   resize: none;
 }
