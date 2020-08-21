@@ -69,6 +69,7 @@
       </div>
     </header>
     <main>
+
       <!-- banner -->
       <section class="hero">
         <div class="container">
@@ -78,6 +79,18 @@
           <button class="button-order" data-open-modal>Заказать услугу</button>
           <div class="backdrop is-hidden" data-backdrop>
             <div class="modal">
+              <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+              <form method="POST"
+                <input type="text" name="user-name" class="field input-field">
+                <input type="tel" name="user-tel" class="field input-field">
+                <input type="email" name="email" class="field input-field">
+                <textarea class="field textarea-note" name="note" id="note" cols="30" rows="10"></textarea>
+                <input type="checkbox"><p class="agree">Соглашаюсь с рассылкой и принимаю <a href="#"
+                    aria-label="contract conditions"
+                    target="_blank"
+                    rel="noopener noreferrer" class="contract">Условия договора</a></p>
+                <button type="send" class="modal-send">Отправить</button>
+               </form>
               <button class="modal-close" data-close-modal>
                 <svg class="icon-modal-close" width="18" height="18">
                   <use xlink:href="./images/sprite.svg#icon-close-black"></use>
@@ -644,27 +657,19 @@
             </li>
           </ul>
         </div>
-        <!-- <div class="mailing footer-item">
+        <div class="mailing footer-item">
           <p class="footer-title">Подпишитесь на рассылку</p>
           <div class="subscribe-cont">
-            <textarea
-              class="textarea-subscr"
-              name="subscribe"
-              id="#"
-              cols="30"
-              rows="1"
-            >
-E-mail</textarea
-            >
+            <form action="#">
+              <input type="email" placeholder="E-mail" class="input-subscr">
+            </form>
             <button class="btn-subscribe">
               <span class="subscr-text">Подписаться</span>
-              <img
-                class="subscr-icon"
-                src="./images/icon-send.svg"
-                alt="send"
-              />
+              <svg class="subscr-icon" width="24" height="24">
+                <use xlink:href="./images/sprite.svg#icon-send"></use>
+              </svg>
             </button>
-          </div> -->
+          </div>
         </div>
       </div>
     </footer>
