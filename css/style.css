@@ -359,6 +359,11 @@ body {
   margin-top: 30px;
   margin-bottom: 40px;
 }
+.modal-send:disabled,
+.modal-send:disabled:hover {
+  background-color: var(--border);
+  color: var(--white-color);
+}
 .checkbox-container {
   display: flex;
   margin-top: 20px;
@@ -417,7 +422,8 @@ body {
   position: absolute;
   top: 50%;
   left: 15px;
-  transform: translateY(2.5px);
+
+  transform: translateY(-50%);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
