@@ -102,12 +102,15 @@
                     <use xlink:href="./images/sprite.svg#icon-email-black"></use>
                   </svg>
                 </div>
-                <label for="note" class="modal-label">Комментарий</label>
-                <textarea class="field textarea-note" name="note" id="note" cols="30" rows="8" placeholder="Введите текст"></textarea>
-                <input type="checkbox"><p class="agree">Соглашаюсь с рассылкой и принимаю <a href="#"
-                    aria-label="contract conditions"
-                    target="_blank"
-                    rel="noopener noreferrer" class="contract">Условия договора</a></p>
+                <label for="note" class="modal-label" name="note">Комментарий</label>
+                <textarea class="field textarea-note" name="note" id="note" cols="30" rows="6" placeholder="Введите текст"></textarea>
+                <label class="checkbox-container">
+                  <input type="checkbox" class="checkbox-input" name="checkbox">
+                  <span class="custom-checkbox"></span>
+                  <span class="agree">Соглашаюсь с рассылкой и принимаю <a href="#" aria-label="contract conditions" target="_blank"
+                      rel="noopener noreferrer" class="contract">Условия договора</a>
+                  </span>
+               </label>
                 <button type="send" class="modal-send">Отправить</button>
               </form>
               <button class="modal-close" data-close-modal>
