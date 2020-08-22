@@ -298,9 +298,15 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-field {
   height: 40px;
+  padding-left: 42px;
+}
+.field:focus {
+  border: 1px solid var(--accent-color);
 }
 .modal-label {
   font-weight: 400;
@@ -325,9 +331,10 @@ body {
   letter-spacing: 0.01em;
 
   padding: 12px;
-
-  color: var(--modal-note);
 }
+/* .textarea-note:placeholder-shown {
+  color: var(--modal-note);
+} */
 .modal-send {
   width: 200px;
   height: 50px;
@@ -345,6 +352,20 @@ body {
 }
 .contract {
   color: var(--accent-color);
+}
+.form-field {
+  position: relative;
+}
+.icon-modal-input {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(2.5px);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-field:focus + .icon-modal-input {
+  fill: var(--accent-color);
 }
 
 /* preferences */
